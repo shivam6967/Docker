@@ -1,0 +1,44 @@
+-- for running ubuntu image 
+
+docker run -it ubuntu 
+
+docker run -it <image_name>
+-- start running the image in container if locally present else it will download from Docker Hub 
+
+----------------------------------
+
+-it :- interactive , mean it will never get back to you local terminal it will say with the image terminal , you will not be exit after running the container 
+
+----------------------------------
+
+docker container ls 
+-- we get all the running containers 
+
+docker container ls -a 
+-- we get all the containers -> running and not-running 
+
+docker start <container_name>  
+-- will start the running the container 
+
+docker stop <container_name>
+-- will stop the container 
+
+docker exec -it <container_name> <command>
+docker exec -it <container_name> bash
+
+
+docker images ls
+docker images
+-- we get the list of all images
+
+
+-------------------------------------------------
+
+# PORT MAPPING 
+
+docker run -it -p:8080:1220 <image_name>
+
+-- the image running in the container , here the port is also in container , if we check in our browser it will show error , here we have to map the port 
+
+here we have mapped the port with 8080 -> 1220 
+now we can check 8080 running in our machine , we give any port as we need  

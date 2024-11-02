@@ -1,1 +1,9 @@
 -- Guide for the Docker 
+
+-- Running the Ubuntu in our local machine 
+
+-- we are using the Ubuntu Image 
+
+docker run -it ubuntu
+
+-- now we can use the ubuntu in our terminal , it run in container 
