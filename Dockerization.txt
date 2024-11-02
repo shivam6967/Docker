@@ -24,11 +24,23 @@ Run the Code/ File (ENTRYPOINT[node , index.js])
 
 Commands for Creating Image 
 
-docker build -t <image_name> .
+* docker build -t <image_name> .
 
 docker build -t => is the tag_name <image_name> . => is the path . means it is in the same folder 
 
 -- After Creating Image on the Local Machine 
 -- to run 
 
-docker run -it -p:8080:8080 <image_name>
+* docker run -it -p:8080:8080 <image_name>
+
+-----------------------------------------------
+
+Publishing into the Docker_Hub 
+
+->  Create Repo on the DockerHub 
+-> copy the name for making the image with the same name 
+
+* docker build -t <image_name> .
+
+-> from the terminal :- 
+* docker push <image_name>

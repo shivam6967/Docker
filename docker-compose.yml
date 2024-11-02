@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres # pull from DockerHub
+    ports: -"5432":"5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: review
+      POSTGRES_PASSWORD: password
+
+    redis:
+      image: redis # pull from DockerHub
+      ports: -"6379":"6379"
+# Like this i will put as much servies and theri configuration and dependencies ...

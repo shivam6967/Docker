@@ -1,0 +1,11 @@
+-- Docker Compose :- if we want to use multiple containers with the different services and different port mapping we use docker-compose.yml 
+
+
+* docker compose up 
+-- start running 
+
+* docker compose up -d 
+-- in detached mode => it running in the Background 
+
+* docker compose down 
+-- stop running 

@@ -1,8 +1,9 @@
 -- for running ubuntu image 
 
-docker run -it ubuntu 
+* docker run -it ubuntu 
 
-docker run -it <image_name>
+* docker run -it <image_name>
+
 -- start running the image in container if locally present else it will download from Docker Hub 
 
 ----------------------------------
