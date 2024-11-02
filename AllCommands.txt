@@ -42,3 +42,9 @@ docker run -it -p:8080:1220 <image_name>
 
 here we have mapped the port with 8080 -> 1220 
 now we can check 8080 running in our machine , we give any port as we need  
+
+-- if we want to pass the Environment_Variables 
+
+docker run -it -p:8080:8080 -e key = value -e key = value <image_name>
+
+here -e key = value is the Environment_Variable , we can pass multiple Environment_Variables

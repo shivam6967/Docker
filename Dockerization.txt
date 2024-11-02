@@ -1,0 +1,34 @@
+-- Dockerization of Nodejs Application :- 
+
+--> Create Nodejs Application 
+
+--> Create Dockerfile  : give the same name to the docker-file
+
+--> in the Dockerfile :- 
+Base Image (FROM)
+Dependencies (RUN) 
+Code Copy (COPY Source Destination)
+Run the Code/ File (ENTRYPOINT[node , index.js])
+
+-- This the Follow of the code in Dockerfile 
+
+-- there is Layer Caching in Dockerfile
+-- each layer / line store in the cache 
+-- it will only run those commands where there is change in code (run all commands which is changed )
+
+-- Create an Docker Image 
+-- Push the Our Local Custom Image to Docker Hub 
+-- if we want to use this image , we directly pull from the docker hub , with any installation 
+
+------------------------------------------
+
+Commands for Creating Image 
+
+docker build -t <image_name> .
+
+docker build -t => is the tag_name <image_name> . => is the path . means it is in the same folder 
+
+-- After Creating Image on the Local Machine 
+-- to run 
+
+docker run -it -p:8080:8080 <image_name>
